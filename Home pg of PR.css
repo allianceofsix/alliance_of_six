@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: block;
+}
+
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    height: 4rem;
+}
+ 
+nav{
+    margin: 4em;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    margin-top: -15px;
+    margin-bottom: auto;
+    
+}
+ 
+nav {
+    width: 30rem;
+}
+ 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+nav ul li a {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+ 
+nav ul li a:hover {
+    background-color: #0dac30;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.reachUs-button {
+    padding: 1rem;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.reachUs-button:hover{
+    background-color: #1ac840;
+}
+ 
+/* banner section styles */
+.banner {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+ 
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+/* Contact form styles */
+.contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+}
+ 
+.form-container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.form-group {
+    margin-bottom: 20px;
+}
+ 
+.form-container label {
+    display:block;
+    font-weight: bold;
+}
+.form-container input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+ 
+/* Contact info styles */
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20%;
+    background-color: #f7f7f7;
+}
+ 
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+ 
+/* Footer styles */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+ 
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+ 
+    .hamburger {
+        display: flex;
+    }
+ 
+    #nav-menu {
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        display: none;
+    }
+ 
+    #nav-menu.active {
+        display: block;
+        flex-direction: row;
+        padding: 1rem;
+    }
+}
+
+
+main {
+    display: flex;
+    gap: 8em;
+    margin-top: 11em;
+  }
+  
+  .left-col {
+    width: 45%;
+  }
+  
+  .right-col {
+    flex-grow: 1;
+  }
+  
+  h1 {
+    font-size: 5.2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+  }
+  
+  
+  .sub-head {
+    margin-left: 20%;
+    font-size: 1.6rem;
+  }
+  
+  .cta-btns,
+  .secondary-cta {
+    display: flex;
+    gap: 2em;
+  }
+  
+  .primary-cta {
+    background-color: palevioletred;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 1.9em;
+    padding: 1em ;
+    margin-left: 35%;
+  }
+  
+  .secondary-cta {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1em 0;
+    align-items: center;
+  
+  }
+  
+  
+  .secondary-cta svg {
+    /* px not effect when scale or zoomin and zoomout happen */
+    width: 20px;
+    transition: transform .3s;
+  
+  }
+  
+  .news {
+    display: flex;
+    gap: 3em;
+    margin-top: 3em;
+    padding: 5em;
+    border: 1px solid gray;
+    border-radius: .8em;
+    position: relative;
+  }
+  
+  .news::before {
+    position: absolute;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    left: -40px;
+    z-index: 2;
+  }
+  
+  p.employee {
+    font-size: 3.3rem;
+    margin: 0;
+    font-weight: 200;
+  }
+  
+  p.details {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+
+  /* -------------------------- right column gallery -------------------------- */
+  .right-col {
+    display: grid;
+    gap: 2.3em;
+    /* repeat(2,auto) except auto auto  */
+    grid-template-columns: repeat(2, auto);
+    /* for align grid like |= */
+    grid-template-areas:
+      "left right"
+      "left bottom"
+    ;
+  }
+  
+  .card {
+    background: grey;
+    border-radius: .8em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+    background-size: 150%;
+    transition: background-size 800ms;
+  }
+  
+  .card1 {
+    /* take left full column */
+    grid-area: left;
+    background-image: url('http://www.patanpatola.com/images/sarees/s30_1.jpg') ;
+    position: relative;
+  
+  }
+  .card1:before{
+    position: absolute;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+  
+  .card2 {
+    grid-area: right;
+    background-image: url('http://www.patanpatola.com/images/sarees/s18_1.jpg') ;
+  
+  }
+  
+  .card3 {
+    grid-area: bottom;
+    background-image: url('http://www.patanpatola.com/images/sarees/s19_1.jpg');
+  
+  }
+  
+  
+  .card-details {
+    background-color: white;
+    border-radius: 1em;
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 800ms;
+  }
+  
+  .card-details a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .card-details p {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  
+  
+  p.product-price {
+    font-size: 1.8rem;
+  }
+  
+  
+  /* -------------------------- microinteractions -------------------------- */
+  nav ul li a:hover:before{
+    width: 35%;
+  }
+  
+  .primary-cta:hover{
+    background: #FCCFEC;
+  }
+  
+  .secondary-cta:hover svg{
+    transform: translate(10px);
+  } 
+  
+  .secondary-cta:hover{
+    text-decoration: underline;
+  }
+  
+  .card:hover{
+    background-size: 160%;
+  }
+  
+  .card:hover .card-details{
+    transform: translateY(-20px);
+  }
+  
+  /* -------------------------- intro animation -------------------------- */
+  .overlay{
+    position: absolute;
+    z-index: 999;
+    background: white ;
+    width: 100%;
+    height: 100%;
+    /* reveal is name of animatin and that can be anything */
+    animation: reveal 1s ease-in forwards;
+    transform-origin: bottom ;
+  }
+  
+  @keyframes reveal {
+    from{
+      transform: scaleY(1);
+    }
+    to{
+      transform: scaleY(0);
+    }
+  }
+  
+  main{
+    animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transform: scale(.4);
+  }
+  
+  @keyframes growIn {
+    to{
+      transform: scale(1);
+    }
+  }
+
+
+    /*-----Search Engine-----*/
+  .search input[type=text]{
+    width:300px;
+    height:25px;
+    border-radius:25px;
+    border: none;
+}
+     
+.search{
+    float:right;
+    margin:10px;
+    margin-left: 15%;
+    border-radius: 25px;
+}

@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: block;
+}
+
+
+
+/*Header page of buying products*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    height: 4rem;
+}
+ 
+nav{
+    margin: 4em;
+}
+
+.logo {
+    width: 10px;
+    height: 10px;
+    margin-top: -38px;
+    margin-bottom: auto;
+    
+}
+ 
+nav {
+    width: 30rem;
+}
+ 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+nav ul li a {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+ 
+nav ul li a:hover {
+    background-color: #0dac30;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.reachUs-button {
+    padding: 1rem;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.reachUs-button:hover{
+    background-color: #1ac840;
+}
+ 
+/*-----Search Engine-----*/
+.search input[type=text]{
+    width:250px;
+    height:25px;
+    border-radius:25px;
+    border: none;
+}
+     
+.search{
+    float:right;
+    margin:10px;
+    margin-left: -10%;
+    border-radius: 25px;
+}
+
+
+
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+ 
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+ 
+    .hamburger {
+        display: flex;
+    }
+ 
+    #nav-menu {
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        display: none;
+    }
+ 
+    #nav-menu.active {
+        display: block;
+        flex-direction: row;
+        padding: 1rem;
+    }
+}
+
+
+ 
+/* banner section styles */
+.banner {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+ 
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.right-col {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 2.3em;
+    /* repeat(2,auto) except auto auto  */
+    grid-template-columns: repeat(2, auto);
+    /* for align grid like |= */
+    
+  }
+  
+  .card {
+    background: grey;
+    border-radius: .8em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+    background-size: 150%;
+    transition: background-size 800ms;
+  }
+  
+  .card1 {
+    /* take left full column */
+    grid-area: left;
+    background-image: url('http://www.patanpatola.com/images/sarees/s30_1.jpg') ;
+    display: inline-block;
+    text-align: center;
+  
+  }
+  .card1:before{
+    position: relative;
+    text-align: center;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+  
+  .card2 {
+    grid-area: center;
+    background-image: url('http://www.patanpatola.com/images/sarees/s18_1.jpg') ;
+    display: inline-block;
+  
+  }
+  
+  .card2:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  .card3 {
+    grid-area: right;
+    background-image: url('http://www.patanpatola.com/images/sarees/s19_1.jpg');
+    display: inline-block;
+
+  
+  }
+
+  .card3:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+  .card4 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s20_1.jpg') ;
+    display: inline-block;
+
+  
+  }
+  
+  .card4:before{
+    position: relative;
+    text-align: center;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+  .card5 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s21_1.jpg');
+    display: inline-block;
+
+  
+  }
+
+  .card5:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  
+  .card6 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s22_1.jpg');
+    display: inline-block;
+
+  
+  }
+
+  .card6:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+  
+  .card7 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s23_1.jpg');
+    display: inline-block;
+  
+  }
+
+  .card7:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  .card8 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s24_1.jpg');
+    display: inline-block;
+  
+  }
+
+  .card8:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  .card9 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s25_1.jpg');
+    display: inline-block;
+
+  
+  }
+
+  .card9:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  .card10 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s26_1.jpg');
+    display: inline-block;
+  
+  }
+
+  .card10:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+
+
+  .card11 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s27_1.jpg');
+    position: relative;
+
+  
+  }
+
+  .card11:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  .card12 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s28_1.jpg');
+    position: relative;
+
+  
+  }
+
+  .card12:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  .card13 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s29_1.jpg');
+    position: relative;
+
+  
+  }
+
+  .card13:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  .card14 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s17_1.jpg');
+    position: relative;
+
+  
+  }
+
+  .card14:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  .card15 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s1_1.jpg');
+    position: relative;
+
+  
+  }
+
+  .card15:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  .card16 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s2_1.jpg');
+    position: relative;
+
+  
+  }
+
+  .card16:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  .card17 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s5_1.jpg');
+    position: relative;
+
+  
+  }
+
+  .card17:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  .card18 {
+    background-image: url('http://www.patanpatola.com/images/sarees/s6_1.jpg');
+    position: relative;
+
+  
+  }
+
+  .card18:before{
+    position: relative;
+    content: "";
+    background: url('../images/gift.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: -100px;
+    /* because our sizes relevent to absolute and maybe our click event cant be use then we use below code */
+    pointer-events: none;
+  }
+
+
+  
+  .card-details {
+    background-color: white;
+    border-radius: 1.4em;
+    padding: 1.4em;
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 800ms;
+  }
+  
+  .card-details a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .card-details p {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  
+  
+  p.product-price {
+    font-size: 1.8rem;
+  }
+  
+  
+  /* -------------------------- microinteractions -------------------------- */
+  nav ul li a:hover:before{
+    width: 35%;
+  }
+  
+  .primary-cta:hover{
+    background: #FCCFEC;
+  }
+  
+  .secondary-cta:hover svg{
+    transform: translate(10px);
+  } 
+  
+  .secondary-cta:hover{
+    text-decoration: underline;
+  }
+  
+  .card:hover{
+    background-size: 160%;
+  }
+  
+  .card:hover .card-details{
+    transform: translateY(-20px);
+  }
+  
+  /* -------------------------- intro animation -------------------------- */
+  .overlay{
+    position: relative;
+    z-index: 999;
+    background: white ;
+    width: 100%;
+    height: 100%;
+    /* reveal is name of animatin and that can be anything */
+    animation: reveal 1s ease-in forwards;
+    transform-origin: bottom ;
+  }
+  
+  @keyframes reveal {
+    from{
+      transform: scaleY(1);
+    }
+    to{
+      transform: scaleY(0);
+    }
+  }
+  
+  main{
+    animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transform: scale(.4);
+  }
+  
+  @keyframes growIn {
+    to{
+      transform: scale(1);
+    }
+  }
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: cover;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    height: 4rem;
+}
